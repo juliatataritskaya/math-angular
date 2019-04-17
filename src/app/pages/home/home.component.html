@@ -1,0 +1,467 @@
+<app-header></app-header>
+<!-- Header -->
+<header class="masthead">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-uppercase text-center font-weight-bold">Alexa skill to practice and perfect essential K-4
+        mental math
+      </h1>
+    </div>
+    <a href="https://www.amazon.com/gp/product/B07Q2BWF3F" target="_blank"
+       class="btn btn-primary js-send-analytics" data-skill-level="1">View in Amazon Skill Store</a>
+  </div>
+</header>
+
+<section class="quote first-quote">
+  <div class="container">
+    <p>
+      "Mental arithmetic fluency plays a fundamental role in the acquisition  of higher-level mathematical
+      competence."
+
+    </p>
+    <p class="text-right author ">
+      <small> G. R. Price, et al. The Journal of Neuroscience, 33, 156-163 (2013)</small>
+    </p>
+
+    <!--
+    <p class="mt-4">
+         "I would like to make a case for raising the importance of mental math <br> as a major component in students’ tool kits of mathematical knowledge."
+
+    </p>
+    <p class="text-right author ">
+        <small class="text-right"> Cathy Seeley, President of the National Teachers of Mathematics, 2004–2006</small>
+    </p>
+
+-->
+
+  </div>
+</section>
+
+<!-- Section with video -->
+<section id="about">
+  <div class="container">
+    <div class="row mt-md-5">
+      <div class="col-md-6 mt-5">
+        <div class="card">
+          <div class="card-section">
+            <p class="text-center cell large-9">No screens, no distraction - just fun and enjoyable 10-15
+              minute episodes
+              aligned with the Common Core curriculum.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-section">
+            <p class="text-center cell large-9">The episodes are carefully sequenced, and introduce
+              new material gradually.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mt-5">
+        <div class="video-wrap">
+          <div class="video-content">
+            <iframe src="https://www.youtube.com/embed/kPan_QqH9v0"
+                    allowfullscreen="allowfullscreen"
+                    mozallowfullscreen="mozallowfullscreen"
+                    msallowfullscreen="msallowfullscreen"
+                    oallowfullscreen="oallowfullscreen"
+                    webkitallowfullscreen="webkitallowfullscreen">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Links to the Amazon Store -->
+<section id="skills">
+  <div class="container">
+    <h2 class="text-center mt-0">Magic Numbers in the Amazon Skill Store</h2>
+    <hr class="divider my-4">
+    <h5 class="text-center text-muted mb-3">Grade-appropriate math practice in sets of lessons </h5>
+
+
+    <div class="row mt-3">
+      <div class="col-lg col-sm-12 col-xs-12 text-center card">
+        <div class="mt-5 skill card-section">
+          <a class="mb-4 disabled"><img height="150" width="auto" src="assets/img/skills/skill-k.png"></a>
+          <h3 class="h4 mt-3 mb-2">Kindergarten</h3>
+        </div>
+        <div class="card-section bg-section-primary">
+          <p lang="en" class="text-muted mb-0 text-center">Counting forwards by 1’s and 10’s, counting
+            forwards
+            from a given number, comparing numbers, & understanding addition and subtraction. </p>
+        </div>
+        <div class="card-footer">
+          <a class="mt-3 js-send-analytics" data-skill-level="k" (click)="openSMSDialog()">Coming Soon</a>
+        </div>
+      </div>
+      <div class="col-lg col-sm-12 col-xs-12 text-center card">
+        <div class="mt-5 skill card-section">
+          <a href="https://www.amazon.com/gp/product/B07Q2BWF3F" target="_blank" class="mb-4"><img
+            height="150" width="auto" src="assets/img/skills/skill-1.png"></a>
+          <h3 class="h4 mt-3 mb-2">1st Grade</h3>
+        </div>
+        <div class="card-section bg-section-primary">
+          <p class="text-muted mb-0 text-center"> Expanding counting skills, composing and decomposing
+            numbers, add and subtract within 20, solve word problems involving addition and
+            subtraction. </p>
+        </div>
+        <div class="card-footer">
+          <a href="https://www.amazon.com/gp/product/B07Q2BWF3F" target="_blank"
+             class="btn btn-primary mt-3 js-send-analytics" data-skill-level="1">Enable</a>
+        </div>
+      </div>
+      <div class="col-lg col-sm-12 col-xs-12 text-center card">
+        <div class="mt-5 skill card-section">
+          <a class="mb-4"><img height="150" width="auto" src="assets/img/skills/skill-2.png"></a>
+          <h3 class="h4 mt-3 mb-2">2nd Grade</h3>
+        </div>
+        <div class="card-section bg-section-primary">
+          <p class="text-muted mb-0 text-center">Addition and subtraction combinations, understanding place
+            value, mental 2 digit addition and subtraction, solve word problems involving addition and
+            subtraction.
+          </p>
+        </div>
+        <div class="card-footer">
+          <a class="mt-3 js-send-analytics" data-skill-level="2"
+             (click)="openSMSDialog()">Coming Soon</a>
+        </div>
+      </div>
+      <div class="col-lg col-sm-12 col-xs-12 text-center card">
+        <div class="mt-5 skill card-section">
+          <a class="mb-4"><img height="150" width="auto" src="assets/img/skills/skill-3.png"></a>
+          <h3 class="h4 mt-3 mb-2">3rd Grade</h3>
+        </div>
+        <div class="card-section bg-section-primary">
+          <p class="text-muted mb-0 text-center">Multiplication and division combinations, mental 2 digit
+            addition and subtraction, solve word problems involving multiplication and division.</p>
+        </div>
+        <div class="card-footer">
+          <a class="mt-3 js-send-analytics" data-skill-level="3" data-toggle="modal"
+             (click)="openSMSDialog()">Coming Soon</a>
+        </div>
+      </div>
+      <div class="col-lg col-sm-12 col-xs-12 text-center card">
+        <div class="mt-5 skill card-section">
+          <a class="mb-4"><img height="150" width="auto" src="assets/img/skills/skill-4.png"></a>
+          <h3 class="h4 mt-3 mb-2">4th Grade</h3>
+        </div>
+        <div class="card-section bg-section-primary">
+          <p class="text-muted mb-0 text-center">Multiply and divide with powers of 10, multiply 2 digit
+            numbers
+            mentally, finding factor pairs, identifying multiple, prime and composite numbers 1-100, solve
+            multi-step word problems involving all four operations.</p>
+        </div>
+        <div class="card-footer">
+          <a class="mt-3 js-send-analytics" data-skill-level="4" data-toggle="modal"
+             (click)="openSMSDialog()">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="quote">
+  <div class="container">
+
+    <!--
+    <p>
+      "Awesome that there is no screen! When I give my son the math apps on my phone, he usually sneaks over to play other games. I love that this is pure math with no screens slowly frying his brain!"
+
+    </p>
+    <p class="text-right author "><small> - Nina G, Mom, Manhattan NY</small></p>
+-->
+
+
+    <p>
+      "I would like to make a case for raising the importance of mental math <br> as a major component in
+      students’ tool kits of mathematical knowledge."
+
+    </p>
+    <p class="text-right author ">
+      <small class="text-right"> Cathy Seeley, President of the National Teachers of Mathematics, 2004–2006
+      </small>
+    </p>
+
+
+  </div>
+</section>
+
+<!-- Services -->
+<section id="benefits">
+  <div class="container">
+    <h2 class="text-center mt-0">Why choose Magic Numbers?</h2>
+    <hr class="divider my-4">
+    <h5 class="text-center text-muted mb-3">Here's why both you and your children are going to love Magic
+      Numbers</h5>
+    <div class="row">
+      <div class="offset-lg-2 offset-md-2 col-lg-4 col-md-4 col-sm-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="card-block">
+              <h4 class="card-title">Enjoyable</h4>
+              <p class="card-text"> (Yes! That's the most important part!) We've designed our lessons to
+                help your child practice and master fundamental math skills - and to have fun doing
+                it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="card-block">
+              <h4 class="card-title">Satisfaction </h4>
+              <p class="card-text"> Feel successful every day while learning. Your child will gain
+                satisfaction when he
+                feels his step-by-step
+                progress, as well as from sincere positive feedback and encouragement, which help him
+                learn from mistakes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="card-block">
+              <h4 class="card-title">Screenless</h4>
+              <p class="card-text">Practicing math doesn’t have to mean more time in front of a screen.
+                When we open our ears and just listen, we enter a world of imagination, self-reflection,
+                and authentic learning. Math becomes more meaningful.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="card-block">
+              <h4 class="card-title">Multitasking</h4>
+              <p class="card-text">Practice math during snack time, while building lego fortresses or
+                during bath time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="card-block">
+              <h4 class="card-title">And a small but significant parental benefit... </h4>
+              <p class="card-text">You don’t have to surrender your phone or computer to your child.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section id="story">
+  <div class="container">
+    <h2 class="text-center mt-0">Our story</h2>
+    <hr class="divider my-4">
+    <div class="row">
+      <div class="col-sm-10 mx-auto text-justify card">
+        <div class="card-body">
+          <div class="card-block">
+
+            <p class="card-text">
+              Hi, it’s Michael Feigenson and Frederick Won Park, founders of Magic Numbers Math. We first
+              met in 2018 in Cambridge, MA, where Michael’s kids went to school and Fred was a
+              teacher/instructional coach. One rainy afternoon, we were talking about the role of
+              technology in math education. We wondered why so many students still struggle with basic
+              math skills despite a multitude of software programs designed to help them. Even with
+              advances in interactive technology, we realized that many of these computer-based programs
+              entertained more than they educated. While fancy graphics and arcade like games can be
+              powerful tools to encourage interest, they didn’t necessary nurture a child’s ability to
+              think independently. In fact, instead of giving time to make mental connections of an
+              important idea, the programs immediately distracted them to another visually
+              over-stimulating activity. In short, students were watching passively more than they were
+              thinking actively.
+
+              <span id="dots">...</span>
+            </p>
+
+            <div id="demo" class="collapse">
+
+              <p class="card-text">
+
+                That was the beginning of Magic Numbers Math. We set out to create a learning activity
+                that respects a child’s natural imagination and builds their ability to think
+                independently. A place where a student can talk about math in way that is natural, fun,
+                and free from pencil, paper and screen. We want to create an intimate space where
+                children can think and reason out their solutions. With all the computers, tablets, and
+                phones present not only in the classroom but society as well, we want a place for
+                children to unplug and listen. Most importantly, we want children to connect with the
+                most powerful and perhaps most human experience of all – listening to a story.
+
+              </p>
+
+
+              <p class="card-text">
+                In March 2019 we released our first tutoring skill for Amazon Alexa,
+                <a class="font-weight-bold" href="https://www.amazon.com/gp/product/B07Q2BWF3F"
+                   target="_blank">Magic Numbers: K-4 Mental Math</a>, which helps
+                kindergarteners and elementary school students to build
+                mental math fluency through engaging activities and fun stories. We hope you like it and
+                find it helpful for your children. Listen, Imagine, and Learn!
+
+              </p>
+
+              <!--
+
+
+                                      <p class="card-text">Hi, it’s Michael Feigenson and Fredric Won Park here, founders of Magic
+                                          Numbers Math.
+                                          Here’s how our story began: We first met in 2018 in Cambridge MA, where Michael’s kids went
+                                          to school and kindergarten, and where Fred have been teaching math as a Title I teacher and
+                                          serving as an instructional coach for over 20 years.</p>
+
+                                      <p class="card-text"> It was one rainy afternoon at the school fair... “Hey coach Fred”, I
+                                          asked, wanting to share with him some of my recent thoughts, “what do you think about
+                                          practising math verbally, without pencil and paper? You know, I recently had this idea based
+                                          on using an Amazon Alexa... ”Oh.. don’t get me started.”, Fred iterapted, “Children today
+                                          don’t know how to listen, how to think and how to express themselves verbally! It’s all
+                                          about ready made content that is served to them on a screen. They get to the 7th grade and
+                                          they hardly can calculate a change in the store, or figure out a dress discount. The
+                                          expression of the mathematical ideas happens through the language! When a child talks about
+                                          five puppies and two kittens, he visualizes the problem, he uses his imagination and he
+                                          thinks! <span id="dots">...</span></p>
+                                      <div id="demo" class="collapse">
+                                          <p class="card-text"> And teachers… we’re often turning back to the students and we’re
+                                              writing,
+                                              instead of talking to them and letting them listen and speak. A few days ago I just said
+                                              to
+                                              my student, don’t look at the board, just listen to me… And I was amazed to see what
+                                              happened next. Suddenly their eyes opened, they started visualizing the problem, they
+                                              started imagining, and they started thinking!”</p>
+
+                                          <p class="card-text"> “You know Fred”, I said, “Let’s meet for coffee. There is something I
+                                              want
+                                              to talk to you about…”</p>
+
+                                          <p class="card-text">And that’s how our story began. By the end of the school year, I
+                                              (Michael)
+                                              left Cambridge and moved with my family back to our home town Jerusalem, Israel. But our
+                                              collaboration continued and flourished over the ocean. Our vision of creating a
+                                              voice-based
+                                              adaptive software, serving first as a homework support tool and later as an intelligent
+                                              tutoring system capable delivering sophisticated learning continued and progressed, via
+                                              Skype conversations at alternately unlikely hours, US time and Israel time...</p>
+
+                                          <p class="card-text">In February 2019 we released our first Alexa skill, Magic Number Math -
+                                              1st
+                                              grade, which helps 1st grade students and advanced kindergarteners to build mental math
+                                              fluency through engaging activities and fun stories. We hope you like it and find it
+                                              helpful
+                                              for your children and students. We continue working on
+                                          </p>
+                                          -->
+            </div>
+
+            <p class="text-center"><a id="readMore" class="text-center" data-toggle="collapse"
+                                      data-target="#demo"
+                                      onclick="onReadMore()">Read more</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <h2 class="text-center mt-0">Contact Us</h2>
+    <hr class="divider my-4">
+    <div class="row">
+      <div class="col-lg-12">
+        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <div class="form-group">
+                <input class="form-control" id="name" type="text" placeholder="Name *"
+                       required="required" data-validation-required-message="Please enter your name.">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                <input class="form-control" id="email" type="email" placeholder="Email *"
+                       required="required"
+                       data-validation-required-message="Please enter your email address.">
+                <p class="help-block text-danger"></p>
+              </div>
+              <div class="form-group">
+                                <textarea class="form-control" id="message" placeholder="Message *"
+                                          required="required"
+                                          data-validation-required-message="Please enter a message."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-lg-12 text-center">
+              <div id="success"></div>
+              <button class="btn btn-primary" type="submit">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright &copy; Magic Numbers Math 2019</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com/magicnumbersmath" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/magic_nums_math" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com/channel/UCegGWFhRpV-TjYGiQUbeDhQ" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          <!--
+          <li class="list-inline-item">
+              <a href="#">Privacy Policy</a>
+          </li>
+          <li class="list-inline-item">
+              <a href="#">Terms of Use</a>
+          </li>
+          -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

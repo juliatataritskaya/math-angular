@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="content-header">
+    <h2 class="mt-3">Statistics</h2>
+  </div>
+  <div class="card row">
+    <div class="card-header">
+      <h4 class="card-title mb-4">Users who completed at least one lesson: <span *ngIf="totalUsers">{{totalUsers}}</span>
+        <span class="loading" *ngIf="!totalUsers">Loading...</span></h4>
+    </div>
+  </div>
+  <div class="card row">
+    <div class="card-header">
+      <h4 class="card-title">Number of completed lessons</h4>
+    </div>
+    <div class="card-body col-xs-12">
+      <div *ngIf="isFirstLoading">Loading...</div>
+      <div *ngIf="!isFirstLoading">
+        <canvas baseChart height="400" class="chart" [datasets]="firstDataStatistics.y"
+                [labels]="firstDataStatistics.x" [options]="firstBarOptions" [colors]="barChartColors"
+                [chartType]="barChartType"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="card row">
+    <div class="card-header">
+      <h4 class="card-title">Popular lessons</h4>
+    </div>
+    <div class="card-body col-xs-12">
+      <div *ngIf="isSecondLoading">Loading...</div>
+      <div *ngIf="!isSecondLoading">
+        <canvas baseChart height="400" class="chart" [datasets]="secondDataStatistics.y"
+                [labels]="secondDataStatistics.x" [options]="secondBarOptions" [colors]="barChartColors"
+                [chartType]="barChartType"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="card row">
+    <div class="card-header">
+      <h4 class="card-title">Retention </h4>
+    </div>
+    <div class="card-body col-xs-12">
+      <div *ngIf="isThirdLoading">Loading...</div>
+      <div *ngIf="!isThirdLoading">
+        <canvas baseChart height="400" class="chart" [datasets]="thirdDataStatistics.y"
+                [labels]="thirdDataStatistics.x" [options]="thirdBarOptions" [colors]="barChartColors"
+                [chartType]="barChartType"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="row text-left">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Users who used the skill in the past three days</h4>
+          </div>
+          <div class="card-body">
+            <div class="card-block">
+              <ng2-smart-table [settings]="filtersettings" [source]="filterSource"></ng2-smart-table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
