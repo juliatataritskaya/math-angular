@@ -13,7 +13,6 @@ export class HeaderComponent implements AfterViewInit {
   ngAfterViewInit() {
     let s = document.createElement('script');
     s.type = 'text/javascript';
-    s.innerHTML = 'console.log(\'done\');';
     s.src = 'assets/js/script.js';
     this.elementRef.nativeElement.appendChild(s);
   }
